@@ -1,0 +1,92 @@
+/* style.css */
+
+/* Normalize */
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    color: inherit;
+  }
+
+/* Var couleur */
+:root {
+    --primaire: #9356DC ;
+    --secondaire: #FF79DA ;
+    --tertiaire: #99E2D0 ;
+  
+       }
+
+
+.logo{
+    font-family: "Shrikhand", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}      
+
+/* HEADER */
+
+/* HEADER-TOP */
+.header-top{ 
+ background-color: white; 
+ border-bottom: 1px solid black;
+ width: 100%;
+}     
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .location-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(196, 195, 195);
+    
+ 
+    }
+
+    .icon-location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        
+        border-radius: 14px 0 0 14px;
+        }
+
+        .fa-map-marker-alt {
+            font-size: 17px;
+            }
+
+/* Classe générique utilisés */
+
+.menu{}
+
+.restaurant{}
+
+.plats{}
+
+.commande {}
+
+
+
+
+/* Class générique - Hover */
+.menu:hover{}
+
+.restaurant:hover{}
+
+.plats:hover{}
+
+/* FOOTER */
+
+ 
+
+
