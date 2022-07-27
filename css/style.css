@@ -17,7 +17,9 @@
   
        }
 
-
+html{
+    width: auto;
+}
 /* HEADER */
 
 
@@ -64,6 +66,10 @@
             font-size: 17px;
             }
 
+            .fa-map-marker-alt:before{
+                margin-right: 10px;
+            }
+
 
 /* Section */
 section nav{
@@ -86,10 +92,17 @@ section nav{
     -webkit-box-shadow: 0 6px 6px #d1d1d1;
     box-shadow: 0 6px 6px #d1d1d1;
     justify-content: center;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .discover-restaurant li{
-    width: 150px;
+    
+    
+    
+   
+    
 }
 
 
