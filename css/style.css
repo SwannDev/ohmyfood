@@ -7,6 +7,7 @@
     text-decoration: none;
     padding: 0;
     color: inherit;
+ 
   }
 
 /* Var couleur */
@@ -36,8 +37,10 @@ html{
 /* Logo */
 .logo{
     font-family: "Shrikhand", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }      
 
 
@@ -50,6 +53,9 @@ html{
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
     }
 
     .icon-location {
@@ -77,6 +83,7 @@ section nav{
     align-items: center;
     justify-content: center;
     width: 100%;
+    font-family: "Roboto";
     }
 
 .discover-restaurant{
@@ -95,6 +102,7 @@ section nav{
     display: flex;
     margin-left: 25%;
     margin-right: 25%;
+    font-family: "Roboto";
 }
 
 .discover-restaurant li{
