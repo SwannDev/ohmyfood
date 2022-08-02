@@ -34,15 +34,11 @@ h1{
   }
 /* HEADER */
 
-
-
 /* HEADER-TOP */
 .header-top{ 
  background-color: white; 
  width: 100%;
 }     
-
-
 
 
 /* Header */
@@ -96,9 +92,11 @@ header h1{
     width: 100%;
     padding: 40px 0;
 } 
+.IntroduceOMF h2{
+  margin-left: 15%;
+  margin-right: 15%;
+}
  
-
-
     .discover-restaurant button {
       /* linear-gradient: color 1 = primary color, color 5 = tertiaire color, between 1 and 5: color like 1 and 5 */
         background-image: linear-gradient(to left, #9356dc, #b459de, #c354cf, #ea5bdc, #ff79da);
@@ -117,10 +115,9 @@ header h1{
     .discover-restaurant button:hover {
       background-color: #ae80e5;
       background-blend-mode: lighten;
-      box-shadow: 4px 4px 6px #000;
+      box-shadow: 4px 4px 6px black;
     }
 
-   
     /* Functioning */
 
     .functioning {
@@ -146,6 +143,7 @@ header h1{
 
     .functioning li p{
       font-weight: bold;
+      padding-left: 7%;
     }
 
     .functioning-order--number {
@@ -158,7 +156,7 @@ header h1{
 
     .functioning-order--icon {
       color: grey;
-      font-size: 1.2rem;
+      font-size: 17px;
       margin-left: 20px;
   }
 
@@ -186,11 +184,6 @@ header h1{
     margin: 20px;
     position: relative;
     background: white;
-  }
-  @media screen and (min-width: 768px) {
-    .card {
-      width: 40%;
-    }
   }
   
   .card img {
