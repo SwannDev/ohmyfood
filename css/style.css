@@ -1,5 +1,7 @@
 /* style.css */
 
+/* SASS : Ohmyfoodstyle */
+
 /* Normalize */
 *{
     box-sizing: border-box;
@@ -30,16 +32,18 @@ h1{
   }
   h4{
     font-family: 'Roboto', sans-serif;
-
+    font-weight: 500;
   }
+
+/* Fin SASS : Ohmyfoodstyle */
+
+/* SASS : Header */
 /* HEADER */
 
-/* HEADER-TOP */
-.header-top{ 
- background-color: white; 
- width: 100%;
-}     
-
+header{
+  background-color: white; 
+  width: 100%;
+}  
 
 /* Header */
 header h1{
@@ -84,7 +88,9 @@ header h1{
                 margin-right: 10px;
             }
 
-/* IntroduceOMF */
+/* Fin SASS : Header */
+
+/* IntroduceOMF : Only on home page*/
 
 .IntroduceOMF{
     background: #f6f6f6;
@@ -118,7 +124,7 @@ header h1{
       box-shadow: 4px 4px 6px black;
     }
 
-    /* Functioning */
+    /* Functioning : Only on home page*/
 
     .functioning {
         margin-bottom: 45px;
@@ -161,7 +167,7 @@ header h1{
   }
 
  
-    /* Restaurant */
+    /* Restaurant : Only on home page*/
 
     .main-restaurant h3{
       padding-left: 5%;
@@ -177,7 +183,7 @@ header h1{
       padding-left: 10px;
       
     }
-
+/* Card : SASS : use for meals on other pages */
 .card {
     border-radius: 25px;
     box-shadow: 4px 4px 6px #aaa;
@@ -194,11 +200,9 @@ header h1{
     height: 100%;
     max-height: 220px;
   }
+/* Fin Card SASS */
 
-  .card figure {
-    margin: 0;
-}
-
+/* SASS : unisversalfooter */
     /* FOOTER */
 footer {
     background-color: #353535;
@@ -231,3 +235,4 @@ footer {
       footer {
         text-align: left;
       }
+/* Fin SASS : unisversalfooter */      
