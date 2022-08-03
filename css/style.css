@@ -68,6 +68,7 @@ header h1{
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 700;
+    border-top: inset;
     }
 
     .icon-location {
