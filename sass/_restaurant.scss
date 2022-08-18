@@ -1,0 +1,56 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+ .line {
+	width: 40px;
+	border: 2px solid $tertiary-color;
+	margin-left: 10px;
+  }
+  .meals {
+      background-color: #fff;
+      border-radius: 15px;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 4px 4px 6px #aaa;
+      position: relative;
+      cursor: pointer;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      transition: padding-right 450ms ease-in-out;
+      h4 {
+          margin: 0;
+      }
+  }
+  .last__line {
+      p {
+          margin: 0;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 1.5em;
+  }
+  .menu__title {
+      font-family: Shrikhand, sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  }
+  
+
+
+ .the-card{
+	
+	
+ }
+
+ .meals:hover .choice {
+  opacity: 1;
+  transform: translate(-50px);
+}
