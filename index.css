@@ -1,0 +1,264 @@
+header {
+  background-color: white;
+  width: 100%;
+}
+header h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+header .location-box {
+  background-color: #eaeaea;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  border-top: inset;
+}
+
+.icon-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 14px 0 0 14px;
+}
+
+.fa-map-marker-alt {
+  font-size: 17px;
+}
+.fa-map-marker-alt:before {
+  margin-right: 10px;
+}
+
+.arrow {
+  left: 10px;
+  top: 10px;
+}
+
+.header__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn__order button {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  margin: auto;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.line {
+  width: 40px;
+  border: 2px solid #99E2D0;
+  margin-left: 10px;
+}
+
+.meals {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 450ms ease-in-out;
+}
+.meals h4 {
+  margin: 0;
+}
+
+.last__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em;
+}
+.last__line p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu__title {
+  font-family: Shrikhand, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.meals:hover .choice {
+  opacity: 1;
+  transform: translate(-50px);
+}
+
+.contener__menu {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 8px 12px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  overflow: hidden;
+  /* background-color: #fff;
+     border-radius: 15px;
+     margin: 10px;
+     padding: 10px;
+     box-shadow: 4px 4px 6px #aaa;
+     position: relative;
+     cursor: pointer;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden; */
+}
+
+.descmenu {
+  width: 100px;
+  height: 100px;
+  flex-grow: 1;
+}
+
+.choicetest {
+  background-color: #99E2D0;
+  height: 100px;
+  width: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prix {
+  align-self: flex-end;
+  padding-bottom: 16px;
+}
+
+.main__menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  position: relative;
+  margin-top: -50px;
+}
+
+.full__menu {
+  display: flex;
+  justify-content: space-around;
+}
+.starter {
+  animation: fadein 3s ease-in-out;
+  width: 400px;
+}
+.dish {
+  animation: fadein 6s ease-in-out;
+  width: 400px;
+}
+.dessert {
+  animation: fadein 9s ease-in-out;
+  width: 400px;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 20px;
+  height: 30px;
+  right: -50px;
+  top: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  opacity: 0;
+  transition: transform 300ms ease-in-out;
+}
+.choice .fa-check-circle {
+  color: #fff;
+  transition: transform 600ms ease-in-out;
+}
+
+footer {
+  background-color: #353535;
+  padding: 25px;
+  color: white;
+  text-align: left;
+}
+footer h3 {
+  font-family: "Shrikhand", "sans-serif";
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+footer li {
+  padding: 5px 0px 5px 0px;
+}
+footer a {
+  color: white;
+}
+
+.fa-utensils {
+  margin-right: 12px;
+}
+
+.fa-hands-helping {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -2,6 +2,85 @@
 
 /* SASS : Ohmyfoodstyle */
 
+.loader {
+	background: -webkit-linear-gradient(#99E2D0, #9356dc, #b459de, #c354cf, #ea5bdc, #ff79da);
+	width: 100%;
+	height: 100%;
+
+  
+	line-height: 100%;
+	font-family: Shrikhand, sans-serif;
+	font-size: x-large;
+	vertical-align: middle;
+	text-align: center;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	animation: loader 1s ease-in-out 3s forwards;
+}
+
+.loader-omf {
+  vertical-align: middle;
+  position: absolute;
+  top: 10%;
+  
+  left: 33%;
+  right: 33%;
+ 
+}
+
+.loader-food {
+  vertical-align: middle;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  right: 15%;
+  color: black;
+  background-color: opacity;
+  border-radius: 50px;
+  font-weight: 300;
+
+}
+
+.loader-fork {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  right: 33%;
+  animation: rotate 1s linear infinite;
+}
+
+
+
+
+
+
+
+
+@keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 /* Normalize */
 *{
     box-sizing: border-box;
@@ -22,6 +101,43 @@
 
 html{
     width: auto;
+}
+
+.spin {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.spin::before {
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 40px;
+  will-change: transform;
 }
 /* Police de caractere */
 h1{
