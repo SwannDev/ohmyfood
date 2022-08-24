@@ -126,6 +126,9 @@
   right: 1%;
   top: 5%;
 }
+
+
+
 @mixin card {
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
@@ -149,22 +152,3 @@
   padding: 10px;
 }
 
-@mixin choice {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: $tertiary-color;
-		width: 20px;
-		height: 30px;
-    right: -50px;
-    top: 0;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		position: absolute;
-		padding: 20px;
-		opacity: 0;
-		transition: transform 300ms ease-in-out;
-		& .fa-check-circle { color: #fff;
-		transition: transform 600ms ease-in-out;
-	}
-}

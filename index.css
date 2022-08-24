@@ -8,6 +8,9 @@ header h1 {
   text-align: center;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
+  align-items: center;
+  justify-content: center;
+  max-height: 70px;
 }
 header .location-box {
   background-color: #eaeaea;
@@ -41,9 +44,16 @@ header .location-box {
   margin-right: 10px;
 }
 
-.arrow {
-  left: 10px;
-  top: 10px;
+.header__arrow {
+  left: 2rem;
+  padding-left: 20px;
+  padding-top: 20px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.5rem;
+  color: #000;
 }
 
 .header__img img {
@@ -69,6 +79,14 @@ header .location-box {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 .btn__order button {
@@ -101,23 +119,6 @@ body {
   margin-left: 10px;
 }
 
-.meals {
-  background-color: #fff;
-  border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 4px 4px 6px #aaa;
-  position: relative;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  transition: padding-right 450ms ease-in-out;
-}
-.meals h4 {
-  margin: 0;
-}
-
 .last__line {
   display: flex;
   justify-content: space-between;
@@ -139,50 +140,60 @@ body {
   padding: 10px;
 }
 
-.meals:hover .choice {
-  opacity: 1;
-  transform: translate(-50px);
-}
-
-.contener__menu {
+.meals { /* Contener__menu */
   display: flex;
   align-items: center;
-  box-shadow: 0px 8px 12px 4px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  width: 90%;
+  box-shadow: 4px 4px 6px #aaa;
   margin: auto;
+  width: 90%;
+  max-height: 75px;
   background-color: #fff;
-  overflow: hidden;
-  /* background-color: #fff;
-     border-radius: 15px;
-     margin: 10px;
-     padding: 10px;
-     box-shadow: 4px 4px 6px #aaa;
-     position: relative;
-     cursor: pointer;
-     white-space: nowrap;
-     text-overflow: ellipsis;
-     overflow: hidden; */
 }
 
-.descmenu {
+.meals:hover .check {
+  width: 75px;
+  opacity: 1;
+}
+
+.meals:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition: transform 500ms;
+}
+
+.infomenu {
   width: 100px;
   height: 100px;
   flex-grow: 1;
 }
 
-.choicetest {
+.infomenu h4, .infomenu p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.check {
   background-color: #99E2D0;
-  height: 100px;
+  height: 75px;
   width: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 330ms;
+  opacity: 0;
+  border-radius: 0px 15px 15px 0px;
+}
+.check .fa-check-circle {
+  color: #fff;
+  transition: transform 500ms ease-in-out;
 }
 
 .prix {
   align-self: flex-end;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  font-weight: bold;
 }
 
 .main__menu {
@@ -210,27 +221,6 @@ body {
   animation: fadein 9s ease-in-out;
   width: 400px;
 }
-.choice {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 20px;
-  height: 30px;
-  right: -50px;
-  top: 0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  position: absolute;
-  padding: 20px;
-  opacity: 0;
-  transition: transform 300ms ease-in-out;
-}
-.choice .fa-check-circle {
-  color: #fff;
-  transition: transform 600ms ease-in-out;
-}
-
 footer {
   background-color: #353535;
   padding: 25px;

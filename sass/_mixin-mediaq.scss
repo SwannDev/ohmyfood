@@ -19,3 +19,8 @@
       @content;
     }
   }
+
+  @mixin center-mode {
+    display: flex;
+      justify-content: center
+  }  

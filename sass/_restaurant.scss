@@ -7,22 +7,7 @@ body {
 	border: 2px solid $tertiary-color;
 	margin-left: 10px;
   }
-  .meals {
-      background-color: #fff;
-      border-radius: 15px;
-      margin: 10px;
-      padding: 10px;
-      box-shadow: 4px 4px 6px #aaa;
-      position: relative;
-      cursor: pointer;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      transition: padding-right 450ms ease-in-out;
-      h4 {
-          margin: 0;
-      }
-  }
+ 
   .last__line {
       p {
           margin: 0;
@@ -45,57 +30,59 @@ body {
   
 
 
- .the-card{
-	
-	
- }
-
- .meals:hover .choice {
-  opacity: 1;
-  transform: translate(-50px);
-}
-
-.contener__menu{
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 8px 12px 4px rgba(0, 0, 0, 0.2);
+.meals { /* Contener__menu */
+	display: flex;
+	align-items: center;
   border-radius: 15px;
-  width: 90%;
+  box-shadow: 4px 4px 6px #aaa;
   margin: auto;
-  background-color: #fff;
-  overflow: hidden;
+	width: 90%;
+  max-height: 75px;
+	
+	background-color: #fff;
+  }
+  .meals:hover .check{
+    width: 75px;
+    opacity: 1;
+  }
+  
+  .meals:hover .fa-check-circle{
+    transform: rotate(360deg);
+    transition: transform 500ms;
+  }
 
- /* background-color: #fff;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 4px 4px 6px #aaa;
-    position: relative;
-    cursor: pointer;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; */
-}
-
-.descmenu{
+.infomenu {
   width: 100px;
   height: 100px;
   flex-grow: 1;
-
 }
+  
 
-.choicetest {
-  background-color: #99E2D0;
-  height: 100px;
-  width: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.infomenu h4,.infomenu p{
+  white-space : nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}  
 
+.check {
+	background-color: #99E2D0;
+	height: 75px;
+	width: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 330ms ;
+  opacity: 0;
+  border-radius: 0px 15px 15px 0px;
+  & .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+    }
 }
-
 .prix {
-  align-self: flex-end;
-  padding-bottom: 16px;
+	align-self: flex-end;
+	padding-bottom: 8px;
+  padding-right: 10px;
+  font-weight: bold;
 }
 

@@ -6,6 +6,9 @@ header {
 	text-align: center;
 	margin-top: 2.5%;
 	margin-bottom: 2.5%;
+	align-items: center;
+	justify-content: center;
+	max-height: 70px;
 }
 
 	.location-box {
@@ -37,7 +40,24 @@ header {
 	&:before { margin-right: 10px;
 }    }
 
-.arrow {
-	left: 10px;
-	top: 10px
+.header__arrow {
+    
+    left: 2rem;
+    padding-left: 20px;
+	padding-top: 20px;
+  
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    font-size: 1.5rem;
+    color: #000;
+	
 }
+
+
+
+
+
+
