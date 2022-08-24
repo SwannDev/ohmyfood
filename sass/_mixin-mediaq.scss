@@ -20,7 +20,43 @@
     }
   }
 
-  @mixin center-mode {
-    display: flex;
-      justify-content: center
+  @mixin title-restaurant {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      margin-left: 42%;
+      margin-bottom: 0%;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      margin-left: 34%;
+      margin-bottom: 0%;
+    }
+   
+  }  
+
+  @mixin backgroundcolor {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      background-color: $tertiary-color;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      background-color: $tertiary-color;
+    }
+   
+  }  
+
+  @mixin checkcolor {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      color: $secondary-color;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      color: $secondary-color;
+    }
+   
   }  

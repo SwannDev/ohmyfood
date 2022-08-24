@@ -25,3 +25,22 @@
 	  width: 400px;
 	}
 
+.the-card h3{
+	padding-left: 10px;
+}
+
+.menu__title h2{
+	@include title-restaurant	
+	
+}  
+
+.menu__title{
+	@include backgroundcolor
+}
+.main__menu {
+	@include backgroundcolor
+}
+
+.check{
+	@include checkcolor
+}
