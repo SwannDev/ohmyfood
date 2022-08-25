@@ -48,15 +48,77 @@
    
   }  
 
-  @mixin checkcolor {
+  @mixin backgroundwhite {
     @media screen and (min-width:map-get($breakpoints, desktop))
     {
-      color: $secondary-color;
+      background-color: #e7ebe9;
     }
 
     @media screen and (min-width:map-get($breakpoints, tablet))
     {
-      color: $secondary-color;
+      background-color: #e7ebe9;
     }
    
   }  
+
+  @mixin checkcolor {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      color: $tertiary-color;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      color: $tertiary-color;
+    }
+   
+  }  
+
+
+  @mixin noboxshadow {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      box-shadow: none;
+    }
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      box-shadow: none;
+    }
+  }
+
+  @mixin maxwidth {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      max-width: 60%;
+    }
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      max-width: 60%;
+    }
+  }
+
+  @mixin center {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      padding: 0% 20% 0% 20%;
+      align-items: center;
+    }
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      padding: 0% 20% 0% 20%;
+      align-items: center;
+    }
+  }
+
+  @mixin large-center {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      padding: 0% 10% 0% 10%;
+      align-items: center;
+    }
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      padding: 0% 10% 0% 10%;
+      align-items: center;
+    }
+  }

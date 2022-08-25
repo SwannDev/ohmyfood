@@ -27,6 +27,7 @@
 
 .the-card h3{
 	padding-left: 10px;
+    font-weight: 300;
 }
 
 .menu__title h2{
@@ -35,7 +36,7 @@
 }  
 
 .menu__title{
-	@include backgroundcolor
+	@include backgroundwhite
 }
 .main__menu {
 	@include backgroundcolor
@@ -44,3 +45,15 @@
 .check{
 	@include checkcolor
 }
+
+
+.spaceafterbutton {
+	height: 30px;
+	width: 100%;
+	@include backgroundcolor
+}
+
+.meals {
+	@include noboxshadow 
+}
+

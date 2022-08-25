@@ -5,7 +5,7 @@ body {
  .line {
 	width: 40px;
 	border: 2px solid $tertiary-color;
-	margin-left: 10px;
+	margin: 0px 0px 15px 15px;
   }
  
   .last__line {
@@ -25,19 +25,21 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px;
+      padding: 10px 35px 15px 20px;
   }
   
-
+.menu__title h2{
+     font-size: 29px;
+}
 
 .meals { /* Contener__menu */
 	display: flex;
 	align-items: center;
   border-radius: 15px;
-  box-shadow: 4px 4px 6px #aaa;
+  box-shadow: 2px 2px 2px 2px #eee4e4;
   margin: auto;
 	width: 90%;
-  max-height: 75px;
+  max-height: 70px;
   margin-bottom: 5%;
   padding: 0.5%;
 	
@@ -57,6 +59,17 @@ body {
   width: 100px;
   height: 100px;
   flex-grow: 1;
+  padding: 8px 0px 10px 10px;
+}
+
+.infomenu h4{
+  font-size: large;
+  max-height: 20px;
+  position: sticky;
+}
+
+.infomenu p{
+  max-height: 20px;
 }
   
 
@@ -68,8 +81,10 @@ body {
 
 .check {
 	background-color: #99E2D0;
-	height: 75px;
+	height: 71px;
 	width: 0px;
+  padding: 0.5%;
+  margin-right: -0.6%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -83,7 +98,7 @@ body {
 }
 .prix {
 	align-self: flex-end;
-	padding-bottom: 8px;
+	
   padding-right: 10px;
   font-weight: bold;
 }
