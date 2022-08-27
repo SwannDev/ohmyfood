@@ -15,3 +15,8 @@
     margin-bottom: 30px;
 }
 
+.btn__order button:hover {
+    animation: fill 0.3s ease-in-out;
+    background-image: linear-gradient(to left, #1cc457, #1ebd90, #71dd29, #c1e140, #1d944b);
+    color: black;
+}

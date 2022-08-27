@@ -1,221 +1,9 @@
-/* style.css */
-
-.functioning {
-    @include center;
-}
-
-.main-restaurant {
-    @include large-center;
-}
-
-/* SASS : Ohmyfoodstyle */
-
-.loader {
-	background: -webkit-linear-gradient(#99E2D0, #9356dc, #b459de, #c354cf, #ea5bdc, #ff79da);
-	width: 100%;
-	height: 100%;
-
-  
-	line-height: 100%;
-	font-family: Shrikhand, sans-serif;
-	font-size: x-large;
-	vertical-align: middle;
-	text-align: center;
-	position: fixed;
-	z-index: 9999;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	animation: loader 1s ease-in-out 3s forwards;
-}
-
-.loader-omf {
-  vertical-align: middle;
-  position: absolute;
-  top: 10%;
-  
-  left: 33%;
-  right: 33%;
- 
-}
-
-.loader-food {
-  vertical-align: middle;
-  position: absolute;
-  top: 30%;
-  left: 15%;
-  right: 15%;
-  color: black;
-  background-color: opacity;
-  border-radius: 50px;
-  font-weight: 300;
-
-}
-
-.loader-fork {
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  right: 33%;
-  animation: rotate 1s linear infinite;
-}
+/* Home page*/
 
 
 
 
 
-
-
-
-@keyframes rotate {
-  from{
-    -webkit-transform: rotate(0deg);
-  }
-  to{
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
-/* Normalize */
-*{
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    color: inherit;
- 
-  }
-
-/* Var couleur */
-:root {
-    --primaire: #9356DC ;
-    --secondaire: #FF79DA ;
-    --tertiaire: #99E2D0 ;
-  
-       }
-
-html{
-    width: auto;
-}
-
-.spin {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 3px solid rgba(255, 255, 255, .3);
-  border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite;
-}
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-.spin::before {
-  animation: 1.5s linear infinite spinner;
-  animation-play-state: inherit;
-  border: solid 5px #cfd0d1;
-  border-bottom-color: #1c87c9;
-  border-radius: 50%;
-  content: "";
-  height: 40px;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 40px;
-  will-change: transform;
-}
-/* Police de caractere */
-h1{
-    font-family: Shrikhand, Roboto, sans-serif;
-  }
-  body, html {
-    font-family: 'Roboto', sans-serif;
-  }
-  h4{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-  }
-
-/* Fin SASS : Ohmyfoodstyle */
-
-/* SASS : Header */
-/* HEADER */
-
-header{
-  background-color: white; 
-  width: 100%;
-}  
-
-/* Header */
-header h1{
-    font-family: "Shrikhand", sans-serif;
-    font-size: 27px;
-    text-align: center;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-}      
-
-
-  .location-box {
-    background-color: #eaeaea;
-    width: 100%;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 700;
-    border-top: inset;
-    }
-
-    .icon-location {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-        
-        border-radius: 14px 0 0 14px;
-        }
-
-        .fa-map-marker-alt {
-            font-size: 17px;
-            }
-
-            .fa-map-marker-alt:before{
-                margin-right: 10px;
-            }
-
-/* Fin SASS : Header */
-
-/* IntroduceOMF : Only on home page*/
 
 .IntroduceOMF{
     background: #f6f6f6;
@@ -224,8 +12,17 @@ header h1{
     padding: 40px 0;
 } 
 .IntroduceOMF h2{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0% 18% 5% 18%;
+}
+
+.IntroduceOMF p{
+  margin: 0% 10% 3% 10%;
+  font-size: large;
+}
+/* Responsive */
+
+.IntroduceOMF h2,p {
+  @include smallmarginbottom;
 }
  
     .discover-restaurant button {
@@ -240,6 +37,8 @@ header h1{
         cursor: pointer;
         width: 210px;
         height: 50px;
+        margin: 5% 0% 3% 0%;
+        max-width: 100%;
 
     }
 
@@ -249,14 +48,20 @@ header h1{
       box-shadow: 4px 4px 6px black;
     }
 
+    /* Reponsive */ 
+    .discover-restaurant button{
+      @include nomargin
+    }
+
     /* Functioning : Only on home page*/
 
     .functioning {
         margin-bottom: 45px;
     }
 
-    .functioning h3{
-      padding-left: 5%;
+    .functioning h2{
+      padding: 5% 0% 5% 5%;
+      font-weight: bold;
     }
 
     .functioning-order li {
@@ -266,10 +71,22 @@ header h1{
         align-items: center;
         flex-wrap: nowrap;
         padding: 25px;
-        margin: 15px 20px 15px 30px;
+        margin: 15px 20px 25px 30px;
         border-radius: 20px;
         box-shadow: 1px 2px 8px 2px #c4c4c4;
         background-color: #f5f5f5;
+    }
+
+    .functioning-order li:hover {
+        background-color: #d7c0f2;
+        opacity: 1;
+        .fas{
+            color: $primary-color;
+        }
+    }
+
+    .fa-mobile-alt{
+        color: $primary-color;
     }
 
     .functioning li p{
@@ -301,13 +118,27 @@ header h1{
     .main-restaurant .restaurant-title h3{
       font-weight: bold;
     font-size: 19px;
-    padding-left: 10px;
+    padding: 3% 0% 2% 1%;
     }
 
     .restaurant-place h4{
-      padding-left: 10px;
-      
+      padding: 2% 0% 15% 2%;
+      font-weight: 500;
+      font-size: large;
+      width: max-content;
+      @include nopadding;
     }
+
+
+/* Menu */
+   .Menu {
+    @include flexcenter;
+   }
+
+   .Menu h3,h4 {
+    margin: 0;
+    @include nomargin
+   }
 /* Card */
 .card {
     border-radius: 25px;
@@ -315,6 +146,7 @@ header h1{
     margin: 20px;
     position: relative;
     background: white;
+    @include cardsize;
   }
   
   .card img {
@@ -324,45 +156,76 @@ header h1{
     width: 100%;
     height: 100%;
     max-height: 220px;
+    @include cardimg;
   }
+
+
 /* Fin Card SASS */
-
-/* SASS : unisversalfooter */
-    /* FOOTER */
-footer {
-    background-color: #353535;
-    padding: 25px;
-    color: white;
-  }
-   footer h3 {
-      font-family: "Shrikhand", "sans-serif";
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-    footer ul {
-      list-style-type: none;
-    }
-      footer li {
-        padding: 5px 0px 5px 0px;
-     }
-       footer a {
-          color: white;
-        }
-      
-  
-      .fa-utensils {
-        margin-right: 12px;
-      }
-      .fa-hands-helping {
-        margin-right: 5px;
-      }
- 
-      footer {
-        text-align: left;
-      }
-/* Fin SASS : unisversalfooter */      
-
-
 
 /* Mediaqueries */
 
+.functioning {
+    @include center;
+}
+
+.main-restaurant {
+    @include large-center;
+}
+
+.heart-line {
+	justify-content: space-between;
+	display: flex;
+	padding: 0% 8% 0% 3%
+  }
+
+  .heart-line .fa-heart{
+    margin-top: -50%;
+  }
+
+  .restaurant-title{
+	padding-left: 3%;
+  }
+
+  .novelty {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    background-color: #99E2D0;
+    color: #1d7245;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    right: 5%;
+    top: 5%;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+  .container .text {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    
+    font-family: Georgia;
+    margin: 0 auto;
+    
+    color: white;
+   
+}
+
+  .newrestaurant {
+    position: relative;
+  }
+
+  .heart-line .fa-heart {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+     margin-top: -20%;
+    }
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+     margin-top: -20%;
+    }
+}

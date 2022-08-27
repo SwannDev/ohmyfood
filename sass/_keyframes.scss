@@ -1,3 +1,4 @@
+/* Keyrames */
 @keyframes fadein {
     from {
       opacity:0;
@@ -28,4 +29,14 @@
   }
 
 
-  
+  @keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

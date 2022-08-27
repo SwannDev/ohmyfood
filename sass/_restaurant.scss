@@ -32,7 +32,7 @@ body {
      font-size: 29px;
 }
 
-.meals { /* Contener__menu */
+.meals { 
 	display: flex;
 	align-items: center;
   border-radius: 15px;
@@ -46,7 +46,7 @@ body {
 	background-color: #fff;
   }
   .meals:hover .check{
-    width: 75px;
+    width: 60px;
     opacity: 1;
   }
   
@@ -55,12 +55,14 @@ body {
     transition: transform 500ms;
   }
 
+
+  
 .infomenu {
   width: 100px;
-  height: 100px;
+  
   flex-grow: 1;
-  padding: 8px 0px 10px 10px;
-}
+   /*padding: 8px 0px 10px 10px;*/
+}  
 
 .infomenu h4{
   font-size: large;
@@ -98,8 +100,12 @@ body {
 }
 .prix {
 	align-self: flex-end;
-	
-  padding-right: 10px;
+	padding: 0% 4.5% 3.5% 0%;
   font-weight: bold;
 }
 
+/* Mediaqueries */
+
+.meals {
+	@include noboxshadow 
+}

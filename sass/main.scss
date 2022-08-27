@@ -1,10 +1,12 @@
 
 @import './_header';
+@import './_loader';
 @import './_mixin';
+@import './_mixin-mediaq';
 @import './_images';
 @import './keyframes';
 @import './_variables';
-@import './_mixin-mediaq';
+@import './normalize';
 @import './_mainpage';
 @import './_button';
 @import './_restaurant';

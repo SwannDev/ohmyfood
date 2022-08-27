@@ -122,3 +122,91 @@
       align-items: center;
     }
   }
+
+  @mixin cardimg {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      max-height: 195px;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      max-height: 120px
+    }
+    @media screen and (min-width:map-get($breakpoints, medium))
+    {
+      max-height: 135px
+    }
+  }  
+
+  @mixin cardsize {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      min-width: 25%;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      min-width: 25%;
+      min-height: 200px;
+      max-height: 250px;
+    }
+   
+  }  
+
+  @mixin flexcenter {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   
+  }  
+
+  @mixin smallmarginbottom {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      margin-bottom: 2%;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      margin-bottom: 2%;
+    }
+   
+  }  
+
+  @mixin nomargin {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      margin: 0%;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      margin: 0%;
+    }
+   
+  }  
+
+  @mixin nopadding {
+    @media screen and (min-width:map-get($breakpoints, desktop))
+    {
+      padding: 0%;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, tablet))
+    {
+      padding: 0%;
+    }
+   
+  }
