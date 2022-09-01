@@ -17,6 +17,8 @@
 
 .btn__order button:hover {
     animation: fill 0.3s ease-in-out;
-    background-image: linear-gradient(to left, #1cc457, #1ebd90, #71dd29, #c1e140, #1d944b);
     color: black;
+    background-color: #ae80e5;
+      background-blend-mode: lighten;
+      box-shadow: 4px 4px 6px black;
 }

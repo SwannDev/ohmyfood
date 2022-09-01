@@ -175,7 +175,10 @@
 .heart-line {
 	justify-content: space-between;
 	display: flex;
-	padding: 0% 8% 0% 3%
+	padding: 0% 8% 0% 3%;
+  align-items: center;
+  max-width: max-content;
+  
   }
 
   .heart-line .fa-heart{

@@ -59,20 +59,32 @@
 }
 
 
+  .container_heart {
+    width: 0%;
+    margin: auto;
+    position: relative;
+	display: inline-block;
+	max-width: 30px;
+	max-height: 30px;
+    
+}
 
-.fillheart {
-	color: black;
-	cursor: pointer;
-	&:hover {
-	  display: inline-block;
-	  background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-	  background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color:transparent;
-	  font-weight: bold;
-	  animation: fill 0.5s ease-in-out;
-	}
-  }
+
+
+
+.fill{
+    position: absolute;
+    transform: scale(0);
+    color: #c165db;
+    transition: 0.5s;
+
+}
+
+.container_heart:hover .fill {
+    transform: scale(1);
+    
+}
+ 
 
 .the-card h4, p{
 	margin: 0;

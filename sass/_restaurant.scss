@@ -37,7 +37,8 @@ body {
 	align-items: center;
   border-radius: 15px;
   box-shadow: 2px 2px 2px 2px #eee4e4;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 	width: 90%;
   max-height: 70px;
   margin-bottom: 5%;
@@ -55,7 +56,66 @@ body {
     transition: transform 500ms;
   }
 
+ 
+  .meals1 {
+    -webkit-animation: glissement 1000ms 1000ms both;
+            animation: glissement 1000ms 1000ms both;
+  }
+  
+  .meals2 {
+    -webkit-animation: glissement 1000ms 1250ms both;
+            animation: glissement 1000ms 1250ms both;
+  }
+  
+  .meals3 {
+    -webkit-animation: glissement 1000ms 1500ms both;
+            animation: glissement 1000ms 1500ms both;
+  }
 
+  .meals4 {
+    -webkit-animation: glissement 1000ms 1750ms both;
+            animation: glissement 1000ms 1750ms both;
+  }
+
+  .meals5 {
+    -webkit-animation: glissement 1000ms 2000ms both;
+            animation: glissement 1000ms 2000ms both;
+  }
+
+  .meals6 {
+    -webkit-animation: glissement 1000ms 2250ms both;
+            animation: glissement 1000ms 2250ms both;
+  }
+
+  .meals7 {
+    -webkit-animation: glissement 1000ms 2500ms both;
+            animation: glissement 1000ms 2500ms both;
+  }
+
+  .meals8 {
+    -webkit-animation: glissement 1000ms 2750ms both;
+            animation: glissement 1000ms 2750ms both;
+  }
+
+  .meals9 {
+    -webkit-animation: glissement 1000ms 3000ms both;
+            animation: glissement 1000ms 3000ms both;
+  }
+
+  .meals10 {
+    -webkit-animation: glissement 1000ms 3250ms both;
+            animation: glissement 1000ms 3250ms both;
+  }
+
+  .meals11 {
+    -webkit-animation: glissement 1000ms 3500ms both;
+            animation: glissement 1000ms 3500ms both;
+  }
+
+  .meals12 {
+    -webkit-animation: glissement 1000ms 3750ms both;
+            animation: glissement 1000ms 3750ms both;
+  }
   
 .infomenu {
   width: 100px;
