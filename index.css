@@ -1127,6 +1127,10 @@ body {
   max-height: 30px;
 }
 
+.fa-heart {
+  font-size: 4em;
+}
+
 .fill {
   position: absolute;
   transform: scale(0);
