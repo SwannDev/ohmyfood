@@ -94,7 +94,6 @@ header {
   left: 15%;
   right: 15%;
   color: black;
-  background-color: opacity;
   border-radius: 50px;
   font-weight: 300;
 }
@@ -770,10 +769,6 @@ template {
   padding: 0% 8% 0% 3%;
 }
 
-.heart-line .fa-heart {
-  margin-top: -50%;
-}
-
 .restaurant-title {
   padding-left: 3%;
 }
@@ -805,17 +800,6 @@ template {
 
 .newrestaurant {
   position: relative;
-}
-
-@media screen and (min-width: 1280px) {
-  .heart-line .fa-heart {
-    margin-top: -20%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .heart-line .fa-heart {
-    margin-top: -20%;
-  }
 }
 
 .btn__order button {

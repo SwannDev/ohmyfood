@@ -173,10 +173,6 @@ display: flex;
 padding: 0% 8% 0% 3%;
 }
 
-.heart-line .fa-heart{
-  margin-top: -50%;
-}
-
 .restaurant-title{
 padding-left: 3%;
 }
@@ -214,13 +210,3 @@ padding-left: 3%;
   position: relative;
 }
 
-.heart-line .fa-heart {
-  @media screen and (min-width:map-get($breakpoints, desktop))
-  {
-   margin-top: -20%;
-  }
-  @media screen and (min-width:map-get($breakpoints, tablet))
-  {
-   margin-top: -20%;
-  }
-}
