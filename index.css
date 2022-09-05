@@ -516,7 +516,7 @@ template {
   display: none;
 }
 
-/* Home page*/
+/* Main page */
 .IntroduceOMF {
   background: #f6f6f6;
   text-align: center;
@@ -727,7 +727,7 @@ template {
 }
 @media screen and (min-width: 768px) {
   .card img {
-    max-height: 105px;
+    max-height: 120px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -768,8 +768,6 @@ template {
   justify-content: space-between;
   display: flex;
   padding: 0% 8% 0% 3%;
-  align-items: center;
-  max-width: max-content;
 }
 
 .heart-line .fa-heart {
@@ -1119,10 +1117,6 @@ body {
 }
 
 .container_heart {
-  width: 0%;
-  margin: auto;
-  position: relative;
-  display: inline-block;
   max-width: 30px;
   max-height: 30px;
 }
